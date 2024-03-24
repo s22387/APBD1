@@ -4,7 +4,7 @@ double ObliczSrednia(int[] tablica)
 {
     if (tablica == null || tablica.Length == 0)
     {
-        throw new ArgumentException("Tablica nie może być pusta.");
+        throw new ArgumentException("Tablica może być pusta.");
     }
 
     int suma = 0;
