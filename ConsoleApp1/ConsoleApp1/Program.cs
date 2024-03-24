@@ -1,18 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-double ObliczSrednia(int[] tablica)
+﻿static int ZnajdzMaksimum(int[] tablica)
 {
     if (tablica == null || tablica.Length == 0)
     {
         throw new ArgumentException("Tablica może być pusta.");
     }
 
-    int suma = 0;
-    foreach (int liczba in tablica)
+    int maksimum = tablica[0];
+    for (int i = 1; i < tablica.Length; i++)
     {
-        suma += liczba;
+        if (tablica[i] > maksimum)
+        {
+            maksimum = tablica[i];
+        }
     }
 
-    double srednia = (double)suma / tablica.Length;
-    return srednia;
+    return maksimum;
 }
