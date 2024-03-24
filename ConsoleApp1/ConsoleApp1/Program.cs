@@ -5,14 +5,14 @@
         throw new ArgumentException("Tablica może być pusta.");
     }
 
-    int maksimum = tablica[0];
+    int maksimal = tablica[0];
     for (int i = 1; i < tablica.Length; i++)
     {
-        if (tablica[i] > maksimum)
+        if (tablica[i] > maksimal)
         {
-            maksimum = tablica[i];
+            maksimal = tablica[i];
         }
     }
 
-    return maksimum;
+    return maksimal;
 }
