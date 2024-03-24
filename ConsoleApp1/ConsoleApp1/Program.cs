@@ -2,7 +2,7 @@
 {
     if (tablica == null || tablica.Length == 0)
     {
-        throw new ArgumentException("Tablica nie może być pusta.");
+        throw new ArgumentException("Tablica może być pusta.");
     }
 
     int maksimal = tablica[0];
